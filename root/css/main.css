@@ -1,0 +1,164 @@
+/*css document*/
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {
+	text-align:center;
+}
+header{
+	width:100%;
+	height:100vh;
+	background-color: #ccc;
+	background-image: url('../images/header.jpeg');
+	text-align: center; /*works with margin in child div to center align*/
+	background-size: cover;
+	
+
+}
+header h2  /*targets h2 inside of header only*/{
+	color: #fff;
+	position: relative; /*positions div in relation to its parent not the screen*/
+	top: 50%;
+	transform: translateY(-50%);
+	border: solid 5px #fff;
+	border-style: outset;
+	width: 50%;
+	margin: 0 auto; /* works with text align in parent div to center align*/
+	padding: 5% 10%;
+	font-weight: bolder;
+	font-size: 3vw;
+	text-align: center;
+	background-color:rgba(51, 51, 51, 0.4);
+	text-shadow:
+       -1px -1px 10px #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	}
+nav{
+	height:50px;
+	width: 100%;
+	background-color: #cce;
+	text-align: center;
+}
+nav ul li /*targets only li element inside nav*/{
+	display: inline; /*displays links horizontally across screen*/
+	padding: 2% 5%;
+}
+article{
+	width: 100%;
+	text-align: justify;
+	
+}
+section{
+	padding: 2%;
+	width:33%;
+	background-color: #cbb;
+	display: inline-block; /*displays horizontally then reverts to block when required*/
+	margin: 0 auto;
+}
+footer{
+	height:200px;
+	width: 100%;
+	background-color: #bbc;
+	text-align: left;
+	padding: 2% 5%;
+}
+
+a:link {
+	color: white;
+}
+
+/******************class styling*************/
+
+.width33
+{
+	width: 33%; /* used whenever we want 3 things side by side*/
+}
+
+.width60
+{
+	width: 60%; /* center-aligned*/
+}
+
+.width50
+{
+	width: 44%; /*2 things*/
+	margin: 0 auto; /*0 top or bottom auto left right - centers div*/
+	
+}
+
+.inline-block /*this is a class which can be reused which saves time and reduces code*/
+{
+	display: inline-block; /*whenever this class is used the text will be displayed as inline-block*/
+}
+
+.smallicons img /*targets classes images only*/
+{
+	width: 100px;
+	height: 100px;
+	background-colour: #fff;
+}
+
+.error
+{
+text-align: center;
+font-style: italic;
+color: white;
+}
+
+.bxslider img
+{
+	max-width: 100%:
+	display: block;
+}
+
+.hidden
+{
+	display: none; /* this will hide elements from view*/
+}
+
+.topbtn
+{
+	width: 80px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	position: fixed; /* fixes div in exact place on screen*/
+	z-index: 10; /* displays div above all other content in this case 10 layers pu*/
+	right: 10px; /* 10 pixels from right edge of screen*/
+	bottom: 10px /* 10 pixels from the bottom edge of screen*/
+	font-size: 20px;
+}
+
+.centered
+{
+	text-align: center;
+}
+
+/**************bg colours*********/
+.purple {background-color: #971FFF;}
+.lightgreen {background-color: #56FFD0;}
+.darkgreen {background-color: #67E833;}
+
+
+/**********form styling*************/
+form[name='contact'] input
+{
+	height: 50px;
+	width: 300px;
+	border-radius: 10px;
+	background-color: #56FFD0;
+	padding: 10px 20px;
+}
+
+form[name='contact'] button
+{
+height: 25px;
+width: 150px;
+border-radius: 10px;
+background-colour: #67E833;
+}
+
+form[name='contact'] 
+{
+	text-align: center;
+}

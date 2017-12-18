@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Unit 20 Home Page </title>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<link href="css/lightbox.css" rel="stylesheet">
+		<!-- all third party css must go above this line-->
+		<link rel="stylesheet"
+		type="text/css"
+		href="css/main.css">
+	</head>
+	
+	<body name="top" id="top"> 
+	<div class="topbtn"><a href="#top"> Top</a> </div> <!-- this is the go to top of page button-->
+	
+	
+	<header> 
+		<h2 id="app"> Chris' Portfolio </h2> <!-- location of the div id called app-->
+	</header>
+	
+	<nav name="navigation"> <h2 class="hidden"> Main Navigation</h2>
+      <ul>
+        <li><a href="#top"> Home </a></li>
+        <li><a href="#about"> About</a> </li>
+        <li><a href="#gallery"> Gallery</a> </li>
+        <li><a href="#contact"> Contact</a> </li>
+		<li><a href="#work"> Work</a> </li>
+      </ul>
+    </nav>
+	
+		
+		<article name="aboutme" id="about"> <h2 class="hidden"> About Myself</h2><!--main body of text-->
+			<section name="myself"> <h2> Who am I?</h2>
+			Hello, my name is Chris Bollard and welcome to my portfolio. In this portfolio you will get to know me through this about section you are reading
+			right now! also contained in the portfolio is some of the work I have created over the last two years. It is important to note that this website
+			uses JavaScript functions so ensure that you use a browser that supports the most up to date version of JavaScript. Now a bit more about me...
+
+			I am currently 20 years old and have lived in Chester all my life. I went to Christleton High School for both high school and sixth
+			form. As far as GCSE's go I managed to obtain eleven GCSE's ranging from grades B to D. Some of the best grades were in regards to maths, religous studies and personal
+			finance. During my time in high school I enjoyed some of the activities we did in physical education as I had not heard or played them before. These
+			activities included orienteering, ultimate frisbee & water polo. Also once a week I took part in a after school activity which was handball. I found
+			this really enjoyable and found myself to be quite good at it. 
+			
+			At sixth form I studied a variety of subjects which were English Language, Business & IT as I felt it was important to keep my options open.
+			The most liked subject at sixth form was English Language. This was because I could express myself and learn about the history of the language that
+			I used.
+			Through my experience at sixth form I chose a career path related to the IT industry and so decided to seek further education at West Cheshire College
+			were I am currently studying. In my spare time I like to spend time with friends and family as well as go on bike rides. 
+			
+			In terms of my hobbies I like to keep up to date with the world of football. Not only do I like watching football on the TV but also playing it. I
+			was in a 5 a side football team during sixth form. 
+			</section>
+			
+			<section name="myskills"> <h2> My skills</h2>
+			When I was thirteen I applied for a newspaper round for a local newsagents. I feel that this was a well taken oppurtunity because I have experienced the
+			work environment from an early age. The newspaper round allowed me to gain skills such as working a routine, organisational skills and creating a strategy.
+			
+			The next time I was in a different work place environment was part of the work experience that I completed during high school. The work experience
+			entailed myself working as an assistant caretaker at a block of flats. I picked up many practical skills as well as experiencing a new work environment.
+			
+			Throughout my time in education I have gained many valuable skills. The grades that I am most proud of are English Language and Computing which are A-Levels and a level 3 course respectively.
+			As mentioned I have been studying IT at West Cheshire College for 2 years which I have picked up many skills. One skill I have picked up is leadership. This has been accomplished
+			by being selected as the student rep for my course. This involved portraying any concerns, improvements or issues to members of staff. Throughout the two years of the course I have completed 18 different 
+			units which covered a variety of both hardware and software. In particular they covered: websites, coding, databases, digital graphics & communication technologies.
+			
+			Another skill that I have picked up at college is being able to assemble a computer together. This was part of an assignment in which I took photos of each stage of the assembly.
+			Yet another skill that I have picked up is being able to create and design websites. Part of unit 20 was to create the site that you are using! This unit was heavily focused
+			on the client side customisation through the use of CSS and JavaScript.
+			
+			As part of the course I was sent out on work experience for one week. The experience took place in the IT department at the Countess of Chester Hospital.
+			This experience covered many different areas of IT such as working on a helpline, fixing issues both with hardware and software and compling a spreadsheet 
+			for a work rota. 
+			
+			
+			</section>
+			
+			<section name="myaspirations"> <h2> My aspirations</h2>
+			After my time studying this course at West Cheshire College I have many different paths open to me. The three main paths that I have are university, apprenticeship
+			or employment. I am not looking to go to university at the moment because I feel that I need more time to adapt to a work environment. However, if in the future
+			I feel that I want to expand my knowledge then I will definitly consider going. The other two options, apprenticeship and employment, are both similar however
+			I would prefer an apprenticeship. This is because I am able to obtain money for later life as well as continuing the expansion of my knowledge.
+			
+			My aspiration in life is to sustain a happy and healthy lifestyle. This will come through a well paid job which I enjoy. I believe that this job will come through the IT industry. After this course it is likely
+			that I will come into some form of employment as I'm looking to gain more work experience to get used to a work environment and routine. I have looked into the area of e-marketing which I believe is something 
+			I have good knowledge of. I will be determined to work my way up into a higher position of the company. 
+			
+			I have believed in a quoute which is "Do what you love and you will never have to work a day in your life." -Confucius. This means that
+			if you get a job doing something you like you will always see it as fun and not dull and boring which means you have to work past the boredom.
+			
+			In terms of aspirations besides work I would like to become more sociable. Through my time in education I have sometimes been socially awkward which
+			is something I want to put in the past. I will be able to achieve this goal through going to new places to meet new people. Also, I could learn
+			conversational skills so that I can establish and maintain a conversation.
+			</section>
+			</article>
+			
+			<article name="contactme" class="purple centered" id="contact"> <h2> Contact Me</h2>
+			<script src="js/contact_val.js"></script>
+			<div class="error" id="errmsg"></div>
+			<form name="contact" onsubmit="return checkForm()" action="#errmsg">
+			<input type="text" name="fname" placeholder="First Name"></input>
+			<input type="text" name="lname" placeholder="Last Name"></input> <br>
+			<input type="email" name="email" placeholder="Email Address"></input>
+			<input type="date" name="dob" placeholder="Date of Birth"></input> <br>
+			<input type="tel" name="tel" placeholder="Contact Number"></input>
+			<input type="date" name="date" placeholder="Call Back Date"></input> <br>
+			<button type="submit">Submit</button>
+			</form>
+			<section class="width50 purple">
+			<h2 class="lightgreen"> Email</h2>
+			To contact me via E-Mail use 1598230452@west-cheshire.ac.uk
+			</section>
+			<section class="width50 purple"><h2 class="lightgreen"> Telephone</h2>
+			To contact me via telephone use 07562846109
+			</section>
+			<section class="width50 purple">
+			<h2 class="lightgreen"> Address</h2>
+			My address is 123 Long Lane, Chester, Cheshire, CH4 F8Y
+			</section>
+			<section class="width50 purple"><h2 class="lightgreen"> Contact Hours</h2>
+			Please make sure to contact me between the hours of 09:00-17:00
+			</section>
+		</article>
+		
+		<article name="work" id="work"> <h2> Work </h2>
+		<a href="documents/task2.docx"> <img src="images/ecommerce.jpg"></a>
+		<a href="documents/Task5.docx"> <img src="images/programming.jpg"> </a>
+		<a href="documents/unit19.docx"> <img src="images/binary.jpg"> </a>
+		<a href="documents/AcademicPoster.pptx"> <img src="images/wifi.jpg"> </a>
+		
+		</article>
+		
+		
+<!-- bxslider start-->		
+		<article name="gallery" id="gallery" > <h2> Gallery</h2>
+			<ul class="bxslider">
+				<li><img src="images/watch.jpg"></li>
+				<li><img src="images/phone.jpg"></li>
+				<li><img src="images/keyboard.jpg"></li>
+				<li><img src="images/html.jpg"></li>
+			</ul>
+		<a href="images/poster.jpg" data-lightbox="image-1" data-title="Poster"><img src="images/poster.jpg"></a>
+		<a href="images/logo.jpg" data-lightbox="image-1" data-title="Logo"><img src="images/logo.jpg"></a>
+		<a href="images/logo2.jpg" data-lightbox="image-1" data-title="Logo "><img src="images/logo2.jpg"></a>
+		<a href="images/compimage.jpg" data-lightbox="image-1" data-title="Composite Image"><img src="images/compimage.jpg"></a>
+		</article>
+		
+		
+		
+		<footer>
+		<script src="js/browser.js"></script> <!--Links browser detect script to page-->
+		<div class="inline-block" id="browser"></div> <!-- Links to document.getElementById ("browser").innerHTML=type; -->	
+<div class ="smallicons inline-block" id="icon"></div> <!-- links to document.getElementById("icon").innerHTML=image; -->
+	<script src="js/typewriter.js"></script> <!-- 3rd party typewriter function -->
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- all custom 3rd party js below this line-->
+<script src="js/jquery.bxslider.min.js"></script>	
+<script src="js/lightbox.js"></script>
+<script>
+//bxslider script
+$(document).ready(function(){
+  $('.bxslider').bxSlider(
+  {
+  auto: true,
+  autoControls: true,
+  speed: 2000,
+  mode: 'vertical',
+  autoStart: true
+  }
+  );
+});
+
+//browser detection script
+document.getElementById("browser").innerHTML=type;
+document.getElementById("icon").innerHTML=image;
+var app = document.getElementById('app'); <!-- this gets the element by the id called app located in h2-->
+
+//typewriter
+var typewriter = new Typewriter(app, { <!-- customisation of the js, I have increased the type and delete speed-->
+    loop: true,
+	deleteSpeed: 60,
+	typingSpeed: 40 
+});
+
+typewriter.typeString("Chris' Portfolio") <!-- the first string that is typed-->
+    .pauseFor(2500)
+    .deleteAll() <!-- when the string is finished it pauses for 2500 ms then deletes the string-->
+    .typeString("Chris' Portfolio")
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString("Chris' Portfolio")
+    .start();
+	
+//Smooth Scrolling 3rd party function
+//sourced from https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+	
+</script>	
+
+	</body>
+	
+</html>
